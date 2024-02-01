@@ -18,7 +18,7 @@ __version__ = importlib.metadata.version("npc_utils")
 logger.debug(f"{__name__}.{__version__ = }")
 
     
-def testmod(**testmod_kwargs) -> doctest.TestResults:
+def testmod(**testmod_kwargs) -> doctest.TestResults: # type: ignore[no-redef]
     """
     Run doctests for the module, configured to ignore exception details and
     normalize whitespace.
