@@ -16,8 +16,9 @@ conda activate npc_utils
 pip install npc_utils
 ```
 
+## Python
 ```python
-import npc_utils
+>>> import npc_utils
 ```
 
 # Development
