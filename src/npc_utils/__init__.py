@@ -12,6 +12,9 @@ from npc_lims import *
 from npc_mvr import *
 from npc_session import *
 from npc_sync import *
+from npc_ephys import *
+from npc_stim import *
+from npc_samstim import *
 
 logger = logging.getLogger(__name__)
 
