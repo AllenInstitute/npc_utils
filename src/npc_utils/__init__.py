@@ -6,15 +6,16 @@ import doctest
 import importlib.metadata
 import logging
 
+from npc_ephys import *
+
 # import functions from other packages here:
 from npc_io import *
 from npc_lims import *
 from npc_mvr import *
-from npc_session import *
-from npc_sync import *
-from npc_ephys import *
-from npc_stim import *
 from npc_samstim import *
+from npc_session import *
+from npc_stim import *
+from npc_sync import *
 
 logger = logging.getLogger(__name__)
 
