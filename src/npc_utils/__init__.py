@@ -6,8 +6,6 @@ import doctest
 import importlib.metadata
 import logging
 
-from npc_ephys import *
-
 # import functions from other packages here:
 from npc_ephys import *
 from npc_io import *
