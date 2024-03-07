@@ -13,7 +13,7 @@ dependencies = [
     "npc-sync>=0.1.6",
     "npc-mvr>=0.1.2",
     "npc-stim>=0.1.5",
-    "npc-ephys>=0.1.8",
+    "npc-ephys>=0.1.10",
     "npc-samstim>=0.1.2",
 ]
 version = "0.1.5"
