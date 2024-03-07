@@ -16,7 +16,7 @@ dependencies = [
     "npc-ephys>=0.1.10",
     "npc-samstim>=0.1.2",
 ]
-version = "0.1.5"
+version = "0.1.6"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
