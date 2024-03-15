@@ -16,7 +16,7 @@ dependencies = [
     "npc-ephys>=0.1.10",
     "npc-samstim>=0.1.2",
 ]
-version = "0.1.6"
+version = "0.1.7"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
@@ -36,17 +36,28 @@ Repository = "https://github.com/AllenInstitute/npc_utils"
 Issues = "https://github.com/AllenInstitute/npc_utils/issues"
 
 [build-system]
-requires = ["setuptools>=61", "wheel"]
+requires = [
+    "setuptools>=61",
+    "wheel",
+]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = [
+    "src",
+]
 
 [tool.setuptools.package-data]
-npc_utils = ["py.typed"]
+npc_utils = [
+    "py.typed",
+]
 
 [tool.black]
-target-version = ["py39", "py310", "py311"]
+target-version = [
+    "py39",
+    "py310",
+    "py311",
+]
 
 [tool.ruff]
 line-length = 100
@@ -66,8 +77,12 @@ select = [
     "N",
     "UP",
 ]
-src = ["src"]
-extend-exclude = ["tests/fixtures"]
+src = [
+    "src",
+]
+extend-exclude = [
+    "tests/fixtures",
+]
 target-version = "py39"
 
 [tool.ruff.flake8-tidy-imports]
@@ -77,11 +92,15 @@ ban-relative-imports = "all"
 max-complexity = 10
 
 [tool.coverage.paths]
-source = ["src"]
+source = [
+    "src",
+]
 
 [tool.coverage.run]
 branch = true
-source = ["src"]
+source = [
+    "src",
+]
 
 [tool.coverage.report]
 skip_covered = true
@@ -111,7 +130,10 @@ doctest_optionflags = [
     "IGNORE_EXCEPTION_DETAIL",
     "ELLIPSIS",
 ]
-testpaths = ["src", "tests"]
+testpaths = [
+    "src",
+    "tests",
+]
 
 [tool.mypy]
 check_untyped_defs = false
@@ -125,17 +147,26 @@ no_implicit_optional = true
 show_error_codes = true
 ignore_missing_imports = true
 implicit_reexport = false
-exclude = ["src/npc_utils/scripts"]
+exclude = [
+    "src/npc_utils/scripts",
+]
 
 [tool.isort]
 profile = "black"
 atomic = true
-skip_glob = ["*/setup.py"]
+skip_glob = [
+    "*/setup.py",
+]
 filter_files = true
-known_first_party = ["npc_utils"]
+known_first_party = [
+    "npc_utils",
+]
 
 [tool.pdm]
-plugins = ["pdm-bump", "copier"]
+plugins = [
+    "pdm-bump",
+    "copier",
+]
 
 [tool.pdm.build]
 package-dir = "src"
@@ -175,20 +206,37 @@ dryrun = "pdm publish --repository testpypi --dry-run"
 post_init = "pdm install --plugins"
 
 [tool.pdm.scripts.test]
-composite = ["pdm run mypy", "pdm run pytest"]
+composite = [
+    "pdm run mypy",
+    "pdm run pytest",
+]
 
 [tool.pdm.scripts.docs]
 shell = "cd docs && mkdocs serve"
 help = "Start the dev server for doc preview"
 
 [tool.pdm.scripts.bumpver]
-composite = ["pdm self add pdm-bump", "pdm bump micro"]
+composite = [
+    "pdm self add pdm-bump",
+    "pdm bump micro",
+]
 
 [tool.pdm.scripts.tag]
-composite = ["pdm self add pdm-bump", "pdm bump tag"]
+composite = [
+    "pdm self add pdm-bump",
+    "pdm bump tag",
+]
 
 [tool.pdm.scripts.pre_build]
-composite = ["pdm run black", "pdm run ruff", "pdm run bumpver"]
+composite = [
+    "pdm run black",
+    "pdm run ruff",
+    "pdm run bumpver",
+]
 
 [tool.pdm.scripts.post_build]
-composite = ["git commit -am 'Bump'", "pdm run tag", "pdm run log"]
+composite = [
+    "git commit -am 'Bump'",
+    "pdm run tag",
+    "pdm run log",
+]
