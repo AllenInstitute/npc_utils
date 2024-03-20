@@ -5,7 +5,7 @@
 groups = ["default", "dev", "docs"]
 strategy = ["cross_platform"]
 lock_version = "4.4.1"
-content_hash = "sha256:92b8352d2d01f91e33778358176eba2a28d5cdf183e8a922e1e29140a9540612"
+content_hash = "sha256:495f4c6a4a522c8c67c5c517a767bd061cfbd33138a1d1f757fa1c44ba07787f"
 
 [[package]]
 name = "aind-codeocean-api"
@@ -1700,7 +1700,7 @@ files = [
 
 [[package]]
 name = "npc-io"
-version = "0.1.25"
+version = "0.1.26"
 requires_python = ">=3.9"
 summary = "File IO tools for MindScope Neuropixels projects in the cloud."
 dependencies = [
@@ -1712,8 +1712,8 @@ dependencies = [
     "universal-pathlib<0.2.0",
 ]
 files = [
-    {file = "npc-io-0.1.25.tar.gz", hash = "sha256:70d9811b2bb449087add82f6ed2b9889b757f5d06f4a3bc52cf9c8b4138bfee5"},
-    {file = "npc_io-0.1.25-py3-none-any.whl", hash = "sha256:dfed5b9cc33353fae12366a142c3c02bbd84ae96b2dadf3738d1d900bd033621"},
+    {file = "npc-io-0.1.26.tar.gz", hash = "sha256:009b1b870e8a85ac54e379789e2ec1f6ea413d82fabfd7d7908b88f575177402"},
+    {file = "npc_io-0.1.26-py3-none-any.whl", hash = "sha256:c03f506268480997703d31a2790680ec32140f07a5711e669997669c62fe8241"},
 ]
 
 [[package]]
