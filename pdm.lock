@@ -5,7 +5,7 @@
 groups = ["default", "dev", "docs"]
 strategy = ["cross_platform"]
 lock_version = "4.4.1"
-content_hash = "sha256:91cafbde89914d5ef07510b49af286d9dbca3cab18efea7f95b14b38a9542594"
+content_hash = "sha256:b5440e16fce9ebc00c1a44cc7851bf11a658be3dd32c4a451f33d9f28834dcec"
 
 [[package]]
 name = "aind-codeocean-api"
@@ -1757,7 +1757,7 @@ files = [
 
 [[package]]
 name = "npc-samstim"
-version = "0.1.2"
+version = "0.1.4"
 requires_python = ">=3.9"
 summary = "Tools for processing stim data from Sam's DynamicRoutingTask, compatible with data in the cloud."
 dependencies = [
@@ -1768,8 +1768,8 @@ dependencies = [
     "numba>=0.59.0",
 ]
 files = [
-    {file = "npc-samstim-0.1.2.tar.gz", hash = "sha256:0371d5e324a44ff48e996d886e3aede185ab9bef0af6558517d86e1726d3ecb2"},
-    {file = "npc_samstim-0.1.2-py3-none-any.whl", hash = "sha256:30095428689e097d48ed1091258f1e0c386b184110845af3ba8409dd8ceae185"},
+    {file = "npc-samstim-0.1.4.tar.gz", hash = "sha256:74de6fe149386f0ed857e531b4e0670457f27984267b6820c1ec1f869f77ff86"},
+    {file = "npc_samstim-0.1.4-py3-none-any.whl", hash = "sha256:9c0536bf8bd07e249ca117851074d6b9c2962005044255ed8d1302a0e2ecb9b3"},
 ]
 
 [[package]]
