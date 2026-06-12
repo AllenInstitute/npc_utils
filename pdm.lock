@@ -4,8 +4,11 @@
 [metadata]
 groups = ["default", "dev", "docs"]
 strategy = ["cross_platform"]
-lock_version = "4.4.1"
-content_hash = "sha256:b5440e16fce9ebc00c1a44cc7851bf11a658be3dd32c4a451f33d9f28834dcec"
+lock_version = "4.5.0"
+content_hash = "sha256:6e3c330437f8d057e0b299f8f0f18467f121f189e1caf151402fb80cba1f2dab"
+
+[[metadata.targets]]
+requires_python = ">=3.9"
 
 [[package]]
 name = "aind-codeocean-api"
